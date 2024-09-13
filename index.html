@@ -1,27 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sugar</title>
     <link rel="stylesheet" href="./CSS/index.css">
 </head>
+
 <body>
     <header id="topbar">
-        
+        <div class="navbar">
+            <!-- 三條線的漢堡按鈕 -->
+            <button class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <!--選單列-->
+            <nav class="navigation">
+                <ul class="menu">
+                    <li><a href="#">訂購須知</a></li>
+                    <li><a href="#">宅配專區</a></li>
+                    <li><a href="#">常見問題</a></li>
+                </ul>
+                <ul class="icon">
+                    <li><a class="icon-search" href="#"></a></li>
+                    <li><a class="icon-shoppingCart" href="#"></a></li>
+                    <li><a class="login" href="./login.html"></a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <section id="banner"></section>
+        <section id="banner">
+            <div class="bannerLeft">
+                <h1 class="logo">
+                    <a href="./index.html">
+                        <img src="./images/logo/logo-union-white.svg" alt="Sugar" />
+                    </a>
+                </h1>
+            </div>
+            <div class="bannerRight">
+                <!-- 輪播圖 -->
+            </div>
+        </section>
+
         <section id="aboutus">
             <header class="title">
                 <h2>-品牌故事-</h2>
             </header>
+            <div class="box_list">
+                <div class="itemA">
+                    <figure><img src="./images/aboutus.jpg" alt=""></figure>
+                </div>
+                <div class="itemA">
+                    <div class="content">
+                        <p>我們甜點堅持使用新鮮、天然的食材，每日新鮮現做。無論是香濃的乳酪、當季鮮果，還是優質的巧克力，都精挑細選，只為呈現出最純粹的美味。甜點選擇多元，從經典的提拉米蘇到創意十足的焦糖乳酪蛋糕，總有一款能打動你！
+                            我們相信，甜點不只是美食，更是一種傳遞幸福的方式，讓每位顧客在輕鬆愉快的氛圍中，享受每一口的驚喜與滿足。</p>
+                    </div>
+                </div>
+            </div>
         </section>
+
         <section id="popular">
             <header class="title">
                 <h2>-熱銷商品-</h2>
             </header>
+            <div class="box_list">
+                <div class="item">
+                    <figure><img src="./images/lemoncake.jpg" alt=""></figure>
+                    <div class="content">
+                        <h1><span>01/</span>檸檬磅蛋糕</h1>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="content">
+                        <h1><span>02/</span>招牌提拉米蘇</h1>
+                    </div>
+                    <figure><img src="./images/tiramisu.jpg" alt=""></figure>
+                </div>
+                <div class="item">
+                    <div class="content">
+                        <h1><span>03/</span>法式馬卡龍</h1>
+                    </div>
+                    <figure><img src="./images/marcons.jpg" alt=""></figure>
+                </div>
+                <div class="item">
+                    <figure><img src="./images/buttercake.jpg" alt=""></figure>
+                    <div class="content">
+                        <h1><span>04/</span>奶油戚風蛋糕</h1>
+                    </div>
+                </div>
+                <div class="item">
+                    <figure><img src="./images/sweetcheesecake.jpg" alt=""></figure>
+                    <div class="content">
+                        <h1><span>05/</span>焦糖乳酪蛋糕</h1>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
+    <footer>
+        <div>
+            <small>copyright&copy; Sugar dessertstore.</small>
+            <h1 class="logo">
+                <a href="./index.html">
+                    <img src="./images/logo/logo-union-white.svg" alt="Sugar" />
+                </a>
+            </h1>
+            <nav class="navigation">
+                <ul class="menu-list">
+                    <li class="menu">
+                        <ul class="submenu-icon">
+                            <li class="facebook">
+                                <a href=""><img src="./images/footer/fb.svg" alt="fb" /></a>
+                            </li>
+                            <li class="line">
+                                <a href=""><img src="./images/footer/line.svg" alt="line" /></a>
+                            </li>
+                            <li class="ig">
+                                <a href=""><img src="./images/footer/ig.svg" alt="ig" /></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <ul class="submenu">
+                            <li>信箱：sugar@dessertstore.com.tw</li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
 </body>
+
 </html>

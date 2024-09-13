@@ -37,7 +37,7 @@ ol {
 }
 
 /* 重置圖片 */
-img {
+main img {
     display: block;
     width: 100%;
     max-width: 100%;
@@ -58,6 +58,7 @@ section {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    border: 2px solid red;
 }
 
 .title {
@@ -66,6 +67,7 @@ section {
     align-items: center;
     margin-bottom: 30px;
 }
+
 .title h2 {
     font-family: "Red Hat Display", sans-serif;
     font-optical-sizing: auto;
@@ -76,8 +78,207 @@ section {
     color: #588BAA;
 }
 
+.box_list {
+    width: 80%;
+    max-width: 1440px;
+    /*通常搭配相對單位，設定絕對單位*/
+    display: flex;
+    background-color: transparent;
+}
+
+/* .item {
+	flex: 1;
+} */
+.box_list .itemA {
+    background-color: transparent;
+    flex: 1;
+    /*平板以上有交換主軸方向，flex權重>寬高*/
+    margin: 0 30px;
+    /* box-shadow: 3px 3px 8px #dddddd; */
+    /* border-radius: 1800px; */
+    overflow: hidden;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box_list .itemA p{
+    color: #2B3773;
+}
+/*popular*/
+
+.box_list .item {
+    /* flex: 1; */
+    /*平板以上有交換主軸方向，flex權重>寬高*/
+    margin: 0 15px;
+    /* box-shadow: 3px 3px 8px #dddddd; */
+    /* border-radius: 20px; */
+    overflow: hidden;
+    color: #2B3773;
+}
+
+.box_list .item figure {
+    height: 50vh;
+    border-radius: 20px;
+}
+
+.box_list img {
+    object-fit: cover;
+    height: 100%;
+}
+
+/*topbar*/
+/*漢堡按鈕區*/
+.hamburger{
+    /*修改button在瀏覽器上預設的樣式*/
+    background-color: transparent;
+    border: none;
+}
+.hamburger .bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--deep);
+    margin: 5px auto;
+}
+
+
+.navigation {
+    display: flex;
+    /*主軸垂直*/
+    align-items: flex-end;
+    /*副軸(水平)置底*/
+}
+
+.navigation .icon {
+    display: flex;
+}
+
+.navigation .icon a {
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+    transition: all .35s ease-in-out;
+}
+
+.icon-search {
+    /*只有svg圖繪自動等比例縮放，其他圖檔原始尺寸*/
+    background-image: url(../images/topbar/search.svg);
+}
+
+.icon-shoppingCart {
+    background-image: url(../images/topbar/shoppingCart.svg);
+}
+
+
+.icon-line {
+    background-image: url(../images/topbar/login.svg);
+}
+
+.navigation .menu {
+    display: flex;
+    margin: 15px 0;
+    /*控制父層的外距*/
+    padding: 10px;
+    border-radius: 99px;
+    
+}
+
+.navigation .menu li {
+    border-right: solid 1px #2B3773;
+}
+
+.navigation .menu li:last-child {
+    border-right: none;
+}
+
+.navigation .menu a {
+    color: #2B3773;
+    font-size: 22px;
+    line-height: 1;
+    margin: 0 20px;
+    /*控制子層的外距*/
+    border-bottom: solid 5px transparent;
+}
+
+.navigation .menu a:hover {
+    border-bottom: solid 2px #76716c;
+    transition: .35s ease-in-out;
+}
+
 /*banner*/
+#banner{
+    display: flex;
+    justify-content: space-between;
+}
+.bannerLeft{
+    width: 30%;
+    height: 100vh; /* 設定容器的高度 */
+    background-color: #F9F9F9;
+}
+.bannerRight {
+    width: 70%;
+    height: 100vh; /* 設定容器的高度 */
+    background-image: url('../images/tiramisu.jpg'); /* 背景圖片的路徑 */
+    background-size: cover; /* 圖片覆蓋整個容器 */
+    background-position: center; /* 圖片居中顯示 */
+    background-repeat: no-repeat; /* 圖片不重複 */
+    overflow: hidden;
+}
 /*aboutus*/
-#aboutus{
-    background-color: antiquewhite;
+#aboutus {
+    background-color: #FFF5DB;
+}
+
+/* footer */
+footer {
+    background-color: #588BAA;
+    color: #F9F9F9;
+    padding: 20px;
+    /* 添加 padding 以確保内容可建 */
+    margin-top: auto;
+    /* 確保 footer 在頁面底部 */
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* 保持所有元素在一行，并允许必要时换行 */
+}
+
+footer .navigation {
+    padding: 0 70px 0 0;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-optical-sizing: auto;
+    font-size: 12px;
+    /* 調整字體大小 */
+}
+
+footer .navigation .menu-list {
+    display: column;
+    justify-content: center;
+}
+
+footer .menu {
+    padding: 10px 20px;
+}
+
+footer .menu .submenu {
+    padding: 10px 0;
+}
+
+footer .submenu-icon {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+footer .small {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    opacity: 0.9;
+    font-size: 12px;
 }
