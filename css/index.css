@@ -92,7 +92,9 @@ section {
 
 
 /*popular*/
-
+#popular{
+    height:120vh;
+}
 .box_list .item1{
     width:35%;
     height:80%;
@@ -129,9 +131,7 @@ section {
     object-fit: cover;
     height: 100%;
 }
-.box_list content{
-    
-}
+
 /*topbar*/
 /*漢堡按鈕區*/
 .hamburger{
@@ -175,10 +175,6 @@ section {
     /*控制父層的外距*/
     padding: 10px;
     border-radius: 99px;
-}
-
-.navigation .menu li {
-    border-right: solid 1px #2B3773;
 }
 
 .navigation .menu li:last-child {
