@@ -58,6 +58,8 @@ section {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    /* height: auto; */
+    /* min-height: 100vh;  */
     border: 2px solid red;
 }
 
@@ -84,45 +86,32 @@ section {
     /*通常搭配相對單位，設定絕對單位*/
     display: flex;
     background-color: transparent;
+    text-align: center;
 }
 
-/* .item {
-	flex: 1;
-} */
-.box_list .itemA {
-    background-color: transparent;
-    flex: 1;
-    /*平板以上有交換主軸方向，flex權重>寬高*/
-    margin: 0 30px;
-    /* box-shadow: 3px 3px 8px #dddddd; */
-    /* border-radius: 1800px; */
-    overflow: hidden;
-    height: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.box_list .itemA p{
-    color: #2B3773;
-}
+
 
 /*popular*/
+
 .box_list .item1{
     width:35%;
-    height:100%;
+    height:80%;
     margin: 0 15px;
 } 
+.box_list span{
+    font-size: 40px;
+}
 .box_list .item1 figure {
     border-radius: 100px;
     overflow: hidden; 
 }
 .box_list .item2{
     width:30%;
-    height:80vh;
+    height:40%
 } 
 .box_list .item3{
     width:30%;
-    height:80vh;
+    height:40%;
 } 
 .box_list .item {
     /* flex: 1; */
@@ -136,15 +125,13 @@ section {
     border-radius: 100px;
     overflow: hidden; 
 }
-
-
-
-
 .box_list img {
     object-fit: cover;
     height: 100%;
 }
-
+.box_list content{
+    
+}
 /*topbar*/
 /*漢堡按鈕區*/
 .hamburger{
@@ -159,13 +146,16 @@ section {
     background-color: var(--deep);
     margin: 5px auto;
 }
-
+#topbar{
+    background-color: #F9F9F9;
+}
 
 .navigation {
     display: flex;
     /*主軸垂直*/
-    align-items: flex-end;
+    align-items: center;
     /*副軸(水平)置底*/
+    justify-content: center;
 }
 
 .navigation .icon {
@@ -179,27 +169,12 @@ section {
     transition: all .35s ease-in-out;
 }
 
-.icon-search {
-    /*只有svg圖繪自動等比例縮放，其他圖檔原始尺寸*/
-    background-image: url(../images/topbar/search.svg);
-}
-
-.icon-shoppingCart {
-    background-image: url(../images/topbar/shoppingCart.svg);
-}
-
-
-.icon-line {
-    background-image: url(../images/topbar/login.svg);
-}
-
 .navigation .menu {
     display: flex;
     margin: 15px 0;
     /*控制父層的外距*/
     padding: 10px;
     border-radius: 99px;
-    
 }
 
 .navigation .menu li {
@@ -227,7 +202,11 @@ section {
 /*banner*/
 #banner{
     display: flex;
+    flex-direction: row; 
     justify-content: space-between;
+    align-content: flex-start;
+    width: 100%;
+    background-color: #F9F9F9;
 }
 .bannerLeft{
     width: 30%;
@@ -247,7 +226,25 @@ section {
 #aboutus {
     background-color: #FFF5DB;
 }
-
+/* .item {
+	flex: 1;
+} */
+.box_list .itemA {
+    background-color: transparent;
+    flex: 1;
+    /*平板以上有交換主軸方向，flex權重>寬高*/
+    margin: 0 30px;
+    /* box-shadow: 3px 3px 8px #dddddd; */
+    /* border-radius: 1800px; */
+    overflow: hidden;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box_list .itemA p{
+    color: #2B3773;
+}
 /* footer */
 footer {
     background-color: #588BAA;
