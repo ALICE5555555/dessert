@@ -29,10 +29,18 @@ h5,
 h6 {
     font-weight: normal;
 }
-h3{
+
+h3 {
     font-family: "Noto Sans TC", sans-serif;
     font-weight: 500;
 }
+
+h4 {
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: 64px;
+    font-weight: 500;
+}
+
 /* 重置列表 */
 ul,
 ol {
@@ -59,26 +67,29 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     /* height: auto; */
     /* min-height: 100vh;  */
     border: 2px solid red;
 }
+
 /*topbar*/
 /*漢堡按鈕區*/
-.hamburger{
+.hamburger {
     /*修改button在瀏覽器上預設的樣式*/
     background-color: transparent;
     border: none;
 }
-.hamburger .bar{
+
+.hamburger .bar {
     display: block;
     width: 25px;
     height: 3px;
     background-color: var(--deep);
     margin: 5px auto;
 }
-#topbar{
+
+#topbar {
     background-color: #F9F9F9;
 }
 
@@ -129,74 +140,118 @@ section {
 
 /*banner*/
 .cake {
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	background-image: url('../images/cakebanner.jpg');
-	background-repeat: no-repeat;
-	background-position-y: -800px;
-	background-size: cover;
-	width: 100%;
-	height: 70vh;
-	color: white;
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/cakebanner.jpg');
+    background-repeat: no-repeat;
+    background-position-y: -1200px;
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
+
 .cake img {
-	display: none;
+    display: none;
 }
 
 /*allItem*/
-#allItem{
+#allItem {
     display: flex;
     flex-direction: row;
     width: 100%;
     /* max-width: 1000px; */
     background-color: #FFF5DB;
+    /* height: 180vh; */
 }
-.allItem_l{
-    width: 20%;
+
+.allItem_l {
+    width: 15%;
+    color: #2B3773;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; /* 水平置中 */
+    text-align: center;
 }
-.allItem_R{
-    width:80%;
+
+.allItem_l p {
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+}
+.ice{
+    padding: 150px 0 60px 0;
+    cursor: pointer;
+}
+.noIce{
+    cursor: pointer;
+}
+.allItem_R {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+}
+.sort{
+    padding: 60px 0 40px 0;
+    cursor: pointer;
+}
+.sort p{
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: #1A2431;
+}
+.row{
+    width: 85%;
     display: flex;
     flex-wrap: wrap;
 }
 .allItem_R .item {
     /* flex: 1; */
     /*平板以上有交換主軸方向，flex權重>寬高*/
-    margin: 0 15px 35px;
+    margin: 0 20px 35px;
     /* border-radius: 20px; */
-    width: 25%;
+    width: 28%;
     color: #1A2431;
+    text-align: center;
 }
+
 .allItem_R .item figure {
     height: 40vh;
     border-radius: 80px;
-    overflow: hidden; 
+    overflow: hidden;
 }
+
 .allItem_R img {
     object-fit: cover;
     height: 100%;
 }
+
 .btn-s {
-	font-family: "Noto Sans TC";
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 40px;
-	padding: 8px 30px;
-	border-radius: 99px;
-	transition: .35s ease-in-out;
+    font-family: "Noto Sans TC";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    padding: 8px 41px;
+    border-radius: 99px;
+    transition: .35s ease-in-out;
     background-color: #F9F9F9;
-	color: #2B3773;
-	border-color: #2B3773;
-	border-style: solid;
-	border-width: .3px;
-	letter-spacing: .2rem;
+    color: #2B3773;
+    border-color: #2B3773;
+    border-style: solid;
+    border-width: .3px;
+    width: 180px;
+    letter-spacing: .2rem;
 }
+
 .btn-s:hover {
-	background-color: #2B3773;
-	color: #F9F9F9;
+    background-color: #2B3773;
+    color: #F9F9F9;
 }
+
 /* footer */
 footer {
     background-color: #588BAA;
