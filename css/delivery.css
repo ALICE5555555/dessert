@@ -70,26 +70,11 @@ section {
     /* align-items: center; */
     /* height: auto; */
     /* min-height: 100vh;  */
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 /*topbar*/
-/*漢堡按鈕區*/
-.hamburger {
-    /*修改button在瀏覽器上預設的樣式*/
-    background-color: transparent;
-    border: none;
-}
-
-.hamburger .bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: var(--deep);
-    margin: 5px auto;
-}
-
-#topbar {
+#topbar{
     background-color: #F9F9F9;
 }
 
@@ -99,16 +84,18 @@ section {
     align-items: center;
     /*副軸(水平)置底*/
     justify-content: center;
+    justify-content: space-between;
 }
 
 .navigation .icon {
     display: flex;
+    padding: 0 50px;
 }
 
 .navigation .icon a {
     width: 35px;
     height: 35px;
-    margin-left: 10px;
+    margin-left: 20px;
     transition: all .35s ease-in-out;
 }
 

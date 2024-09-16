@@ -60,7 +60,7 @@ section {
     /* height: 100vh; */
     /* height: auto; */
     /* min-height: 100vh;  */
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 .title {
     display: flex;
@@ -132,19 +132,6 @@ section {
 }
 
 /*topbar*/
-/*漢堡按鈕區*/
-.hamburger{
-    /*修改button在瀏覽器上預設的樣式*/
-    background-color: transparent;
-    border: none;
-}
-.hamburger .bar{
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: var(--deep);
-    margin: 5px auto;
-}
 #topbar{
     background-color: #F9F9F9;
 }
@@ -209,15 +196,41 @@ section {
     width: 30%;
     height: 100vh; /* 設定容器的高度 */
     background-color: #F9F9F9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .bannerRight {
     width: 70%;
-    height: 100vh; /* 設定容器的高度 */
-    background-image: url('../images/tiramisu.jpg'); /* 背景圖片的路徑 */
-    background-size: cover; /* 圖片覆蓋整個容器 */
-    background-position: center; /* 圖片居中顯示 */
-    background-repeat: no-repeat; /* 圖片不重複 */
+    height: 100vh; 
+    /* background-image: url('../images/tiramisu.jpg');  */
+    background-position: center;
+    background-repeat: no-repeat; 
     overflow: hidden;
+}
+.bannerLogo{
+    width: 70%;
+}
+
+.btn-b {
+    font-family: "Noto Sans TC";
+    font-size: 16px;
+    font-weight: 400;
+    padding: 8px 41px;
+    border-radius: 99px;
+    transition: .35s ease-in-out;
+    background-color: #F9F9F9;
+    color: #2B3773;
+    border-color: #2B3773;
+    border-style: solid;
+    border-width: .3px;
+    width: 100%;
+    letter-spacing: .2rem;
+}
+.btn-b:hover {
+    background-color: #2B3773;
+    color: #F9F9F9;
 }
 /*aboutus*/
 #aboutus {

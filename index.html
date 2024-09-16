@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sugar</title>
     <link rel="icon" href="./SUGAR.ico">
+    <link rel="stylesheet" href="./CSS/carousel.css">
     <link rel="stylesheet" href="./css/index.css">
 </head>
 
@@ -23,7 +24,7 @@
                 </ul>
                 <ul class="menu">
                     <li><a href="#">訂購須知</a></li>
-                    <li><a href="#">宅配專區</a></li>
+                    <li><a href="./delivery.html">宅配專區</a></li>
                     <li><a href="#">常見問題</a></li>
                 </ul>
                 <ul class="icon">
@@ -46,11 +47,81 @@
                     </h1>
                 </div>
                 <div class="buyButton">
-                    <a href="">Buy it now</a>
+                    <a class="btn-b" href="./delivery.html">Buy it now </a>
                 </div>
             </div>
             <div class="bannerRight">
-                <!-- 輪播圖 -->
+                <div class="content-slider">
+                    <!-- 讓js換圖片的切換器(隱藏狀態) -->
+                    <input type="radio" id="banner1" class="sec-1-input" name="banner" checked>
+                    <input type="radio" id="banner2" class="sec-1-input" name="banner">
+                    <input type="radio" id="banner3" class="sec-1-input" name="banner">
+                    <input type="radio" id="banner4" class="sec-1-input" name="banner">
+                    <input type="radio" id="banner5" class="sec-1-input" name="banner">
+                    <div class="slider">
+                        <!-- 輪播圖區 -->
+                        <div id="top-banner-1" class="banner">
+                            <div class="banner-inner-wrapper">
+                                <h2>Creative Template</h2>
+                                <h1>Welcome<br>to MoGo</h1>
+                            </div>
+                        </div>
+                        <div id="top-banner-2" class="banner">
+                            <div class="banner-inner-wrapper">
+                                <h2>What We Do</h2>
+                                <h1>Great<br>MoGo</h1>
+                            </div>
+                        </div>
+                        <div id="top-banner-3" class="banner">
+                            <div class="banner-inner-wrapper">
+                                <h2>Here We Are</h2>
+                                <h1>We Are<br>MoGo</h1>
+                            </div>
+                        </div>
+                        <div id="top-banner-4" class="banner">
+                            <div class="banner-inner-wrapper">
+                                <h2>Our Contacts</h2>
+                                <h1>Welcome<br>to MoGo</h1>
+                            </div>
+                        </div>
+                        <div id="top-banner-5" class="banner">
+                            <div class="banner-inner-wrapper">
+                                <h2>Our Contacts</h2>
+                                <h1>Welcome<br>to MoGo</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 輪播張數提示器 -->
+                    <nav>
+                        <div class="controls">
+                            <label for="banner1">
+                                <span class="progressbar">
+                                    <span class="progressbar-fill"></span>
+                                </span>
+                            </label>
+                            <label for="banner2">
+                                <span class="progressbar">
+                                    <span class="progressbar-fill"></span>
+                                </span>
+                            </label>
+                            <label for="banner3">
+                                <span class="progressbar">
+                                    <span class="progressbar-fill"></span>
+                                </span>
+                            </label>
+                            <label for="banner4">
+                                <span class="progressbar">
+                                    <span class="progressbar-fill"></span>
+                                </span>
+                            </label>
+                            <label for="banner5">
+                                <span class="progressbar">
+                                    <span class="progressbar-fill"></span>
+                                </span>
+                            </label>
+                        </div>
+                    </nav>
+                </div>
             </div>
         </section>
 
@@ -145,6 +216,8 @@
             </nav>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/carousel.js"></script>
 </body>
 
 </html>
