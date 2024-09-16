@@ -212,7 +212,9 @@ section {
     border-radius: 80px;
     overflow: hidden;
 }
-
+.allItem_R .item figure:hover{
+    
+}
 .allItem_R img {
     object-fit: cover;
     height: 100%;
