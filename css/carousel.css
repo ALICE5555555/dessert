@@ -46,24 +46,24 @@
     box-sizing: border-box;
 }
 
-#banner .content-slider .slider .banner .banner-inner-wrapper h2 {
+/* #banner .content-slider .slider .banner .banner-inner-wrapper h2 {
     padding-bottom: 0.3em;
     font-family: "Lobster", sans-serif;
     font-weight: 100;
     font-style: normal;
     font-size: 2.5em;
     text-transform: none;
-}
+} */
 
-#banner .content-slider .slider .banner .banner-inner-wrapper h1 {
+#banner .content-slider .slider .banner .banner-inner-wrapper h4 {
     font-family: "Shrikhand";
     font-weight: 100;
-    font-size: 6em;
+    font-size: 4.5em;
     line-height: 95%;
 }
 
 #banner .content-slider .slider #top-banner-1 {
-    background: url(../images/tiramisu.jpg) no-repeat center center;
+    background: url(../images/donuts2.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -78,12 +78,12 @@
 }
 
 #banner .content-slider .slider #top-banner-4 {
-    background: url(../images/stbBanner.jpg) no-repeat center center;
+    background: url(../images/tiramisu.jpg) no-repeat center center;
     background-size: cover;
 }
 
 #banner .content-slider .slider #top-banner-5 {
-    background: url(../images/marcons.jpg) no-repeat center center;
+    background: url(../images/cookiesBanner.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -106,7 +106,7 @@
 #banner .content-slider nav .controls label {
     position: relative;
     display: inline-block;
-    width: 10%;
+    width: 3%;
     height: 3.1em;
     overflow: hidden;
     margin: 0 5px;
@@ -136,7 +136,7 @@
     width: inherit;
     height: inherit;
     margin-left: -100%;
-    background: #e88382;
+    background: #588BAA;
 }
 
 #banner .content-slider nav .controls label span {
@@ -145,7 +145,7 @@
 }
 
 #banner .content-slider nav .controls label:hover {
-    color: #e88382;
+    color: #588BAA;
 }
 
 #banner .content-slider #banner1:checked~.slider #top-banner-1,
