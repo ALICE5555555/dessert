@@ -91,7 +91,9 @@ section {
 
 
 /*popular*/
-
+#popular{
+    background-color: #F9F9F9;
+}
 .box_list .item1{
     width:35%;
     height:80%;
@@ -153,16 +155,18 @@ section {
     align-items: center;
     /*副軸(水平)置底*/
     justify-content: center;
+    justify-content: space-between;
 }
 
 .navigation .icon {
     display: flex;
+    padding: 0 50px;
 }
 
 .navigation .icon a {
     width: 35px;
     height: 35px;
-    margin-left: 10px;
+    margin-left: 20px;
     transition: all .35s ease-in-out;
 }
 
