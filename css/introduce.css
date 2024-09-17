@@ -129,7 +129,11 @@ section {
     border-bottom: solid 2px #76716c;
     transition: .35s ease-in-out;
 }
-/*bannerAll*/
+/*banner*/
+#banner{
+    height:80vh;
+
+}
 .bannerAll{
     display: flex;
     flex-direction: row;
@@ -141,10 +145,11 @@ section {
     width: 50%;
 }
 .bannerLt figure {
-    height: 60%;
-    width: 60%;
+    height: 90%;
+    width: 90%;
     border-radius: 40px;
     overflow: hidden;
+    padding-bottom: 20px;
 }
 .bannerL img {
     object-fit: cover;
@@ -156,19 +161,26 @@ section {
 }
 .bannerLb figure{
     height: 30%;
-    width: 20%;
+    width: 28%;
     border-radius: 20px;
     overflow: hidden;
+    margin-right: 18px;
 }
 .bannerR{
     width: 50%;
 }
 /*way*/
+#way{
+    height: 50vh;
+}
 .wayAll{
     width: 80%;
     max-width: 1440px;
 }
 /*recommendAll*/
+#recommend{
+    height: 80vh;
+}
 .recommendAll{
     width: 80%;
     max-width: 1440px;
