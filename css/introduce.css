@@ -57,12 +57,27 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* height: 100vh; */
     /* height: auto; */
     /* min-height: 100vh;  */
-    /* border: 2px solid red; */
+    border: 2px solid red;
+    background-color: #FFF5DB;
+}
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    margin-bottom: 30px;
 }
 
+.title h2 {
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    letter-spacing: .3rem;
+    color: #588BAA;
+}
 /*topbar*/
 #topbar{
     background-color: #F9F9F9;
@@ -114,7 +129,102 @@ section {
     border-bottom: solid 2px #76716c;
     transition: .35s ease-in-out;
 }
+/*bannerAll*/
+.bannerAll{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    max-width: 1440px;
+    height: 50vh;
+}
+.bannerL{
+    width: 50%;
+}
+.bannerLt figure {
+    height: 60%;
+    width: 60%;
+    border-radius: 40px;
+    overflow: hidden;
+}
+.bannerL img {
+    object-fit: cover;
+    height: 100%;
+}
+.bannerLb{
+    display: flex;
+    flex-direction: row;
+}
+.bannerLb figure{
+    height: 30%;
+    width: 20%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.bannerR{
+    width: 50%;
+}
+/*way*/
+.wayAll{
+    width: 80%;
+    max-width: 1440px;
+}
+/*recommendAll*/
+.recommendAll{
+    width: 80%;
+    max-width: 1440px;
+}
+.itemAll {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* height: 180vh; */
+}
+.item {
+    /* flex: 1; */
+    /*平板以上有交換主軸方向，flex權重>寬高*/
+    margin: 0 20px 35px;
+    /* border-radius: 20px; */
+    width: 28%;
+    color: #1A2431;
+    text-align: center;
+}
+.itemAll .item .content{
+    margin: 10px;
+}
+.itemAll .item .content div{
+    padding-bottom: 5px;
+}
+.itemAll .item figure {
+    height: 40vh;
+    border-radius: 80px;
+    overflow: hidden;
+}
+.itemAll img {
+    object-fit: cover;
+    height: 100%;
+}
 
+.btn-s {
+    font-family: "Noto Sans TC";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    padding: 8px 41px;
+    border-radius: 99px;
+    transition: .35s ease-in-out;
+    background-color: #F9F9F9;
+    color: #2B3773;
+    border-color: #2B3773;
+    border-style: solid;
+    border-width: .3px;
+    width: 180px;
+    letter-spacing: .2rem;
+}
+
+.btn-s:hover {
+    background-color: #2B3773;
+    color: #F9F9F9;
+}
 /* footer */
 footer {
     background-color: #588BAA;

@@ -205,7 +205,12 @@ section {
     color: #1A2431;
     text-align: center;
 }
-
+.allItem_R .item .content{
+    margin: 10px;
+}
+.allItem_R .item .content div{
+    padding-bottom: 5px;
+}
 .allItem_R .item figure {
     height: 40vh;
     border-radius: 80px;
