@@ -150,6 +150,11 @@ h3{
 
 /*topbar*/
 #topbar{
+    position: fixed;
+    top: 0; /* 距離頁面頂部 0px */
+    left: 0; /* 距離頁面左側 0px */
+    width: 100%; /* 寬度為 100% */
+    z-index: 1000; /* 提高 z-index，確保頂部欄不被其他元素遮住 */
     background-color: #F9F9F9;
 }
 
