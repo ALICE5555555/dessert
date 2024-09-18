@@ -168,10 +168,11 @@ p{
 }
 /*banner*/
 #banner{
-    height:80vh;
+    height:90vh;
 
 }
 .bannerAll{
+    padding-top: 100px;
     display: flex;
     flex-direction: row;
     width: 80%;
