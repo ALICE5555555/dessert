@@ -182,6 +182,7 @@ section {
     cursor: pointer;
 }
 .allItem_R {
+    position: relative;
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -199,11 +200,30 @@ section {
     font-size: 22px;
     color: #1A2431;
 }
-.row{
+.iceDisplay,.noIceDisplay{
     width: 85%;
     display: flex;
     flex-wrap: wrap;
 }
+
+.iceDisplay {
+    /* position: absolute; */
+    width: 85%;
+    /* z-index: 1; */
+}
+
+.iceDisplay.active {
+    display: none;
+}
+
+.noIceDisplay {
+    width: 85%;
+}
+
+.noIceDisplay.active {
+    display: none;
+}
+
 .allItem_R .item {
     /* flex: 1; */
     /*平板以上有交換主軸方向，flex權重>寬高*/

@@ -46,16 +46,16 @@
         </section>
         <section id="allItem">
             <div class="allItem_l">
-                <ul class="ice" data-target="aR-ice"><a href="">冷藏宅配</a></ul>
-                <ul class="noIce" data-target="aR-noIce"><a href="">常溫宅配</a></ul>
+                <ul id="iceSearchBtn" class="ice" >冷藏宅配</ul>
+                <ul id="noIceSearchBtn" class="noIce" >常溫宅配</ul>
             </div>
             <div id="aR" class="allItem_R">
-                <div class="sort">
+                <!-- <div class="sort">
                     <div>
                         <p>商品排序</p>
                     </div>
-                </div>
-                <div id="aR-ice" class="row">
+                </div> -->
+                <div id="iceDisplay" class="iceDisplay">
                     <div class="item">
                         <a href="./introduce.html">
                             <figure><img src="./images/buttercake.jpg" alt=""></figure>
@@ -165,7 +165,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="aR-noIce" class="row">
+                <div id="noIceDisplay" class="noIceDisplay">
                     <div class="item">
                         <a href="./introduce.html">
                         <figure><img src="./images/cookies.jpg" alt=""></figure>
@@ -310,6 +310,7 @@
             </nav>
         </div>
     </footer>
+    <script src="./js/delivery.js"></script>
 </body>
 
 </html>
