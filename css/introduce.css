@@ -126,7 +126,7 @@ p{
 
 .navigation .icon {
     display: flex;
-    padding: 0 50px;
+    padding-right: 35px;
 }
 
 .navigation .icon a {
