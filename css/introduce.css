@@ -59,7 +59,7 @@ section {
     align-items: center;
     /* height: auto; */
     /* min-height: 100vh;  */
-    border: 2px solid red;
+    /* border: 2px solid red; */
     background-color: #FFF5DB;
 }
 .title {
@@ -70,19 +70,51 @@ section {
 }
 
 .title h2 {
-    font-family: "Red Hat Display", sans-serif;
+    font-family: "Noto Sans TC", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 32px;
     letter-spacing: .3rem;
     color: #588BAA;
+}
+.bannerR h3 {
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    letter-spacing: .3rem;
+}
+.itemAll h3 {
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+}
+p{
+    font-family: "Noto Sans TC", sans-serif;
+    /* font-size: 16px; */
+    letter-spacing: .2rem;
+}
+.bannerR span{
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+}
+.wayAll ul,.wayAll li{
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: 16px;
+    letter-spacing: .2rem;
 }
 /*topbar*/
 #topbar{
     background-color: #F9F9F9;
 }
-
+#topbar li{
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+}
 .navigation {
     display: flex;
     /*主軸垂直*/
@@ -139,7 +171,6 @@ section {
     flex-direction: row;
     width: 80%;
     max-width: 1440px;
-    height: 50vh;
 }
 .bannerL{
     width: 50%;
@@ -169,6 +200,42 @@ section {
 .bannerR{
     width: 50%;
 }
+.quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 50px;
+}
+.quantity input[type="text"] {
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    margin: 0 10px;
+}
+.quantity button {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.quantity button:hover{
+    background-color: #ccc;
+}
+
+.buttonAll{
+    display: flex;
+    justify-content: center;
+}
+
+.buttonAll .btn-s{
+    margin:30px;
+}
 /*way*/
 #way{
     height: 50vh;
@@ -177,6 +244,7 @@ section {
     width: 80%;
     max-width: 1440px;
 }
+
 /*recommendAll*/
 #recommend{
     height: 80vh;
@@ -194,7 +262,7 @@ section {
 .item {
     /* flex: 1; */
     /*平板以上有交換主軸方向，flex權重>寬高*/
-    margin: 0 20px 35px;
+    margin: 0 30px 35px;
     /* border-radius: 20px; */
     width: 28%;
     color: #1A2431;

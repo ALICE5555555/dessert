@@ -33,6 +33,7 @@ h6 {
 h3 {
     font-family: "Noto Sans TC", sans-serif;
     font-weight: 500;
+    font-size: 22px;
 }
 
 h4 {
@@ -72,7 +73,11 @@ section {
     /* min-height: 100vh;  */
     /* border: 2px solid red; */
 }
-
+#topbar li{
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+}
 /*topbar*/
 #topbar{
     background-color: #F9F9F9;
@@ -163,9 +168,9 @@ section {
     text-align: end;
 }
 
-.allItem_l p {
+.allItem_l ul {
     font-family: "Noto Sans TC", sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 22px;
 }
 .ice{
@@ -182,8 +187,11 @@ section {
     flex-direction: column;
 }
 .sort{
-    padding: 60px 0 40px 0;
+    padding: 60px 150px 40px 0;
     cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    width: 85%;
 }
 .sort p{
     font-family: "Noto Sans TC", sans-serif;
@@ -216,9 +224,7 @@ section {
     border-radius: 80px;
     overflow: hidden;
 }
-.allItem_R .item figure:hover{
-    
-}
+
 .allItem_R img {
     object-fit: cover;
     height: 100%;

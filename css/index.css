@@ -66,19 +66,27 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
 }
 
 .title h2 {
-    font-family: "Red Hat Display", sans-serif;
+    font-family: "Noto Sans TC", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 32px;
     letter-spacing: .3rem;
     color: #588BAA;
 }
-
+h3{
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: .3rem;
+    color: #1A2431;
+}
 .box_list {
     width: 80%;
     max-width: 1440px;
@@ -87,20 +95,27 @@ section {
     background-color: transparent;
     text-align: center;
 }
-
+#topbar li{
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+}
 
 
 /*popular*/
 #popular{
     background-color: #F9F9F9;
+    height: 120vh;
 }
 .box_list .item1{
     width:35%;
     height:80%;
     margin: 0 15px;
 } 
+
 .box_list span{
     font-size: 40px;
+    color: #2B3773;
 }
 .box_list .item1 figure {
     border-radius: 100px;
@@ -237,6 +252,7 @@ section {
 /*aboutus*/
 #aboutus {
     background-color: #FFF5DB;
+    height: 80vh;
 }
 .box_list .itemA {
     background-color: transparent;
