@@ -105,7 +105,7 @@ h3{
 /*popular*/
 #popular{
     background-color: #F9F9F9;
-    height: 120vh;
+    height: 125vh;
 }
 .box_list .item1{
     width:35%;
@@ -254,21 +254,41 @@ h3{
     background-color: #FFF5DB;
     height: 80vh;
 }
-.box_list .itemA {
-    background-color: transparent;
-    flex: 1;
-    /*平板以上有交換主軸方向，flex權重>寬高*/
-    margin: 0 30px;
-    /* box-shadow: 3px 3px 8px #dddddd; */
-    border-radius: 3000px;
-    overflow: hidden;
-    height: 500px;
-    width: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0.9;
+.itemL{
+    width: 50%;
 }
+.itemL figure {
+    margin-left: 120px;
+    height: 480px;
+    width: 480px;
+    border-radius: 250px;
+    overflow: hidden;
+    box-shadow: 25px 20px 0px #588BAA ;
+}
+.itemL img {
+    max-width: 100%;
+    object-fit: cover;
+    height: 100%;
+    opacity: 0.9;
+    overflow: hidden;
+}
+.itemR{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.itemR .content{
+    width: 80%;
+    text-align: left;
+}
+.itemR .content p{
+    font-family: "Noto Sans TC";
+    font-size: 16px;
+    letter-spacing: .2rem;
+    color: #2B3773;
+}
+
 .box_list .itemA p{
     color: #2B3773;
 }
