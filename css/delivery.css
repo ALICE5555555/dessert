@@ -182,6 +182,7 @@ section {
     cursor: pointer;
 }
 .allItem_R {
+    padding-top: 150px;
     position: relative;
     width: 80%;
     display: flex;
