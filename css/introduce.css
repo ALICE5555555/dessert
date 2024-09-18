@@ -285,6 +285,9 @@ p{
     border-radius: 80px;
     overflow: hidden;
 }
+.itemAll .item figure:hover{
+    opacity: 0.8;
+}
 .itemAll img {
     object-fit: cover;
     height: 100%;
