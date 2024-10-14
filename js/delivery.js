@@ -16,7 +16,7 @@ if (iceSearchBtn && noIceSearchBtn) {
     }
 
 
-  // 點選事件- 冷藏
+    // 點選事件- 冷藏
     function showIce() {
         displaySearch(noIceDisplay, iceDisplay);
         setActiveButton(iceSearchBtn, noIceSearchBtn);}
