@@ -60,7 +60,7 @@ section {
     /* height: 100vh; */
     /* height: auto; */
     /* min-height: 100vh;  */
-    /* border: 2px solid red; */
+    border: 2px solid red;
 }
 .title {
     display: flex;
@@ -105,7 +105,7 @@ h3{
 /*popular*/
 #popular{
     background-color: #F9F9F9;
-    height: 125vh;
+    min-height: 130vh;
 }
 .box_list .item1{
     width:35%;
@@ -262,7 +262,7 @@ h3{
 /*aboutus*/
 #aboutus {
     background-color: #FFF5DB;
-    height: 95vh;
+    min-height: 95vh;
 }
 .itemL{
     width: 50%;
