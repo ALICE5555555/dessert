@@ -66,7 +66,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 80px;
 }
 
 .title h2 {
@@ -105,7 +105,7 @@ h3{
 /*popular*/
 #popular{
     background-color: #F9F9F9;
-    min-height: 130vh;
+    min-height: 140vh;
 }
 .box_list .item1{
     width:35%;

@@ -59,7 +59,7 @@ section {
     align-items: center;
     /* height: auto; */
     /* min-height: 100vh;  */
-    /* border: 2px solid red; */
+    border: 2px solid red;
     background-color: #FFF5DB;
 }
 .title {
@@ -172,7 +172,7 @@ p{
 }
 /*banner*/
 #banner{
-    height:90vh;
+    min-height:90vh;
 
 }
 .bannerAll{
@@ -248,7 +248,7 @@ p{
 }
 /*way*/
 #way{
-    height: 50vh;
+    min-height: 70vh;
 }
 .wayAll{
     width: 80%;
@@ -257,7 +257,7 @@ p{
 
 /*recommendAll*/
 #recommend{
-    height: 80vh;
+    min-height: 90vh;
 }
 .recommendAll{
     width: 80%;
